@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('imgbg.png');
+    background-attachment: fixed; /* พื้นหลังคงที่ขณะเลื่อน */
+    background-size: cover; /* ปรับให้ครอบคลุมทั้งหน้าจอ */
+    background-position: center; /* จัดให้อยู่ตรงกลาง */
+    background-color: #f9f9f9;
+}
+
+button {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(33,150,243);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+    
+}
+
+button:hover {
+    background-color: rgb(80, 130, 255);
+}
+
+#webcam-container {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    aspect-ratio: 1/1;
+    background-image: url('vegetable-logo.jpg');
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#label-container {
+    position: absolute;
+    top: calc(20px + 80vw);
+    left: 50%;
+    margin-top: 1px;
+    transform: translateX(-50%);
+    width: 75%;
+    max-width: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 999;
+    margin-bottom: 80px; 
+    margin-top: 1px;
+    max-height: 400px; /* กำหนดความสูงสูงสุด */
+}
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+    position: relative;
+    
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #00ff1e;
+    border-radius: 10px;
+    
+}
+
+.progress-text {
+    font-size: 14px;
+    white-space: nowrap;
+    width: 50px;
+    text-align: right;
+    
+}
+
+
